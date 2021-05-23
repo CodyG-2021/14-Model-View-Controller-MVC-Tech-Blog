@@ -1,0 +1,24 @@
+<div class="text">
+  <h2>{{title}}</h2>
+  <p>{{description}}</p>
+  <p>Created by {{user.username}} on {{format_date date_created}}</p>
+<div>
+
+{{#if logged_in}}
+<div>
+<form class="new-comment-form" data-blogid={{id}}>
+  <div>
+    <textarea class="ml-5" id='comment_description' name="comment-body"></textarea>
+  </div>
+  <div>
+    <button class="button is-warning ml-5 mb-5" type="submit">Add Comment</button>
+  </div>
+</form>
+</div>
+{{/if}}
+
+{{#each comments as |comment|}}
+<div style="border-style: solid;">
+<p>{{comment.comment_description}}</p>
+</div>
+{{/each}}
