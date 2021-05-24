@@ -1,25 +1,32 @@
 <div class="text">
-  <h2>{{title}}</h2>
-  <p>{{description}}</p>
-  <p>Created by {{user.username}} on {{format_date date_created}}</p>
+	<div class="row blogBox">
+		<div class="col-8">
+  		<h2 class="blogTitle text-uppercase">{{title}}</h2>
+		</div> 
+		<div class="col-4">
+  <p class="blogCreate text-right">Created by {{user.username}} on {{format_date date_created}}</p>
+		</div> 
+  <p class="text-center blogDescTwo">{{description}}</p>
+	</div>
 <div>
 
 {{#if logged_in}}
-<div>
-<form class="new-comment-form" data-blogid={{id}}>
+
+<form class="new-comment-form formCont" data-blogid={{id}}>
   <div>
     <textarea id='comment_description' name="comment-body"></textarea>
   </div>
-  <div>
-    <button class="button" type="submit">Add Comment</button>
+  <div class="btnComment">
+    <button class="button btn btn-success" type="submit">Add Comment</button>
   </div>
 </form>
-</div>
+
 {{/if}}
 
+<h3 class="text-center">Comments</h3>
 {{#each comments as |comment|}}
-<div>
-<p>{{comment.comment_description}}</p>
+<div class="commentCont">
+<p class="text-center commentText">{{comment.comment_description}}</p>
 </div>
 {{/each}}
 

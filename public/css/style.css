@@ -1,0 +1,66 @@
+body {
+	background-color: rgb(105, 122, 74);
+}
+
+.navTitle {
+	font-weight: 900;
+	font-size: xx-large;
+}
+
+.blogBox {
+	margin-top: 8px;
+	border-style: solid;
+}
+
+.blogTitle {
+	text-decoration: none;
+}
+
+.blogDesc{
+	border-style: solid;
+	margin-bottom: 5px;
+	padding: 2px;
+}
+
+.blogDescTwo{
+	font-size: 25px;
+	font-style: italic;
+}
+
+.blogCreate {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 12px;
+	padding: 5px;
+}
+
+.formCont{
+	margin-top: 10px;
+}
+
+.commentCont{
+	margin-top: 10px;
+}
+.btnComment {
+	margin-top: 5px;
+}
+
+.commentText{
+	font-weight: bold;
+	padding-top: 5px;
+}
+
+.commentCont {
+	border-style: dashed;
+}
+
+a:link {
+	color: rgb(29, 200, 23);
+}
+a:visited {
+	color: rgb(182, 179, 41);
+}
+
+a:hover{
+	color: deeppink;
+}
