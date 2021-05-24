@@ -6,7 +6,6 @@ const commentFormHandler = async function (event) {
 	const comment_description = document.querySelector('#comment_description').value.trim();
 	
 	if (comment_description) {
-		console.log("testing post for comments")
 		await fetch('/api/comments', {
 			method: 'POST',
 			body: JSON.stringify({
