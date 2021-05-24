@@ -44,6 +44,7 @@ body {
 }
 
 .blogBoxCont {
+	margin-top: 10px;
   border-style: solid;
   background-color: rgb(113, 143, 62);
 }
