@@ -8,10 +8,10 @@
 <div>
 <form class="new-comment-form" data-blogid={{id}}>
   <div>
-    <textarea class="ml-5" id='comment_description' name="comment-body"></textarea>
+    <textarea id='comment_description' name="comment-body"></textarea>
   </div>
   <div>
-    <button class="button is-warning ml-5 mb-5" type="submit">Add Comment</button>
+    <button class="button" type="submit">Add Comment</button>
   </div>
 </form>
 </div>
@@ -22,3 +22,5 @@
 <p>{{comment.comment_description}}</p>
 </div>
 {{/each}}
+
+<script src="/js/comments.js"></script>

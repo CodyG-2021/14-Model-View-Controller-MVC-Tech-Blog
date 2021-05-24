@@ -16,7 +16,6 @@ const commentFormHandler = async function (event) {
 				'Content-Type': 'application/json'
 			}
 		});
-		console.log("post for comments compleat")
 		document.location.reload();
 	}
 };
